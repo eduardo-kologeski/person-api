@@ -1,2 +1,2 @@
 # person-api
-SpringBoot
+repositório criado para praticar exercícios de Java com SpringBoot
