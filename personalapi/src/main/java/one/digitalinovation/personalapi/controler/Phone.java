@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import one.digitalinovation.personalapi.enums.PhoneTypes;
+import one.digitalinovation.personalapi.enums.PhoneType;
 
 @Entity
 @Data
@@ -13,14 +13,13 @@ import one.digitalinovation.personalapi.enums.PhoneTypes;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Phone {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private PhoneTypes type;
+    private PhoneType type;
 
     @Column(nullable = false)
     private String number;
